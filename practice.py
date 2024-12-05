@@ -1,8 +1,9 @@
+import re
 # task 3
 name1=input('enter ur name :')
 email=input('enter mail_id :')
 ph_number=input('enter ph no :')
-print (name1,email,ph_number)email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
 if not re.match(email_pattern, email):
     print("Invalid email address. Please enter a valid email.")
 else:
@@ -12,7 +13,7 @@ height = float(input('enter height :'))
 height_inches="{:.2f}".format(height/2.54)
 # .2f is for taking 2 numbers in decimal
 print (height_inches)
-print("hi")5
+print("hi")
 # add number
 num1 = 3
 num2 = 4
